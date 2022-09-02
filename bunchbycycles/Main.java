@@ -1,5 +1,6 @@
 package bunchbycycles;
-
+import java.io.*;
+import java.util.*;
 public class Main {
   static class CountsByUsage {
     public int lowCount = 0;
@@ -10,6 +11,7 @@ public class Main {
 
   static CountsByUsage countBatteriesByUsage(int[] cycles) {
     CountsByUsage counts = new CountsByUsage();
+   
     for(int i=0;i<cycles.length;i++)
     {
     	if(cycles[i]<0)
@@ -34,8 +36,8 @@ public class Main {
     	}
     	
     }
-    	
-    }
+    
+    
     return counts;
   }
 
